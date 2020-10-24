@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CalendarAppTimeLeft</string>
+    <string name="timeleft">Timeleft</string>
+    <string name="add_event">Add Event</string>
 </resources>
