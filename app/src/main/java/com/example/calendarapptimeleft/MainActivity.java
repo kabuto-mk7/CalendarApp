@@ -31,13 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 opennewactivity();
             }
         });
-   /*     buttonAddEvent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openAddEventActivity();
-            }
-        });
-*/
+
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
@@ -50,10 +44,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AddEventPage.class);
         startActivity(intent);
     }
-
- /*   public void openAddEventActivity(){
-        Intent intent = new Intent(this, AddEventPage.class);
-        startActivity(intent);
-    }*/
 
 }
