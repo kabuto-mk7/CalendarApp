@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     CalendarView calendar;
     TextView textview;
     Button buttonAddEvent;
+    Button buttonViewEvent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +25,19 @@ public class MainActivity extends AppCompatActivity {
         calendar = (CalendarView)findViewById(R.id.calendarView);
         textview = (TextView)findViewById(R.id.textView);
         buttonAddEvent = (Button)findViewById(R.id.buttonAddEvent);
+        buttonViewEvent = (Button)findViewById(R.id.buttonViewEvents);
+
+        buttonViewEvent.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View V){
+                openViewActivity();
+            }
+        });
 
         buttonAddEvent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                opennewactivity();
+                openAddActivity();
             }
         });
 
@@ -40,7 +49,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void opennewactivity(){
+    public void openViewActivity(){
+        Intent intent = new Intent(this, DayView.class);
+        startActivity(intent);
+    }
+
+    public void openAddActivity(){
         Intent intent = new Intent(this, AddEventPage.class);
         startActivity(intent);
     }
