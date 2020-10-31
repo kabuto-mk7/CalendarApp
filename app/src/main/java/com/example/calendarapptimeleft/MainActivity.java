@@ -25,22 +25,35 @@ public class MainActivity extends AppCompatActivity {
         textview = (TextView)findViewById(R.id.textView);
         buttonAddEvent = (Button)findViewById(R.id.buttonAddEvent);
 
+        buttonAddEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opennewactivity();
+            }
+        });
+   /*     buttonAddEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAddEventActivity();
+            }
+        });
+*/
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
                 textview.setText("Date is : " + dayOfMonth + " / " + (month+1) + " / " + year);
             }
         });
-
-        buttonAddEvent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), AddEventPage.class);
-                startActivity(i);
-            }
-        });
-
     }
-}
 
-//test
+    public void opennewactivity(){
+        Intent intent = new Intent(this, AddEventPage.class);
+        startActivity(intent);
+    }
+
+ /*   public void openAddEventActivity(){
+        Intent intent = new Intent(this, AddEventPage.class);
+        startActivity(intent);
+    }*/
+
+}

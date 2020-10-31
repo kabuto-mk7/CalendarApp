@@ -2,4 +2,6 @@
     <string name="app_name">CalendarAppTimeLeft</string>
     <string name="timeleft">Timeleft</string>
     <string name="add_event">Add Event</string>
+    <string name="hello_worild">hello worild</string>
+    <string name="add_event_page" />
 </resources>
