@@ -18,6 +18,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, 1);
     }
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
@@ -48,7 +49,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public Cursor getListContents(){
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor data = db.rawQuery("SELECT + FROM " + TABLE_NAME,null);
+        Cursor data = db.rawQuery("SELECT * FROM " + TABLE_NAME,null);
         return data;
     }
+
 }

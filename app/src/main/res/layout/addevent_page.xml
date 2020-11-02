@@ -4,7 +4,7 @@
     android:layout_height="match_parent" >
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAddEvent"
         android:layout_width="116dp"
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
