@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class DayView extends AppCompatActivity {
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

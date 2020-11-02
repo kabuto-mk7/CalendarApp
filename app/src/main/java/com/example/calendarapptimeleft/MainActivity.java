@@ -12,6 +12,7 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    DatabaseHelper myDB;
     CalendarView calendar;
     TextView textview;
     Button buttonAddEvent;
