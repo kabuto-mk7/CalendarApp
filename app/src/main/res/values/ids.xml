@@ -2,4 +2,5 @@
 <resources>
     <item name="editText" type="id" />
     <item name="listView" type="id" />
+    <item name="btnAdd" type="id" />
 </resources>

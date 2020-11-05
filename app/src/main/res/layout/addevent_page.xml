@@ -17,6 +17,20 @@
         android:layout_marginBottom="32dp"
         android:text="@string/add_event" />
 
+    <Button
+        android:id="@+id/buttonViewEvents"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="522dp"
+        android:layout_marginEnd="270dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/view_events" />
+
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
@@ -30,10 +44,8 @@
         android:layout_marginEnd="101dp"
         android:layout_marginBottom="539dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Event Title"/>
-
-
+        android:hint="@string/event_title"
+        android:inputType="textPersonName" />
 
 
 </RelativeLayout>
